@@ -1,7 +1,7 @@
 {
   "displayName": "UDialogs",
   "category": "Message,Dialogs,Windows",
-  "description": "Dialogue Window System",
+  "description": "Dialogue window system with easy to use api",
   "author": {
     "name": "Pedro Duran"
   },
@@ -16,7 +16,7 @@
     "url": "https://github.com/pedro15/UDialogs.git"
   },
   "unity": "2017.4",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "type": "library",
   "dependencies": {
     "com.unity.textmeshpro": "2.0.1"
