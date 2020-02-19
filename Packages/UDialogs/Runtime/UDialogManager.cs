@@ -31,6 +31,8 @@ namespace UDialogs
 
         [Header("General Settings")]
         [SerializeField]
+        private bool Persistent = false;
+        [SerializeField]
         private Image Background = default;
         [SerializeField]
         private GameObject WindowsContainer = default;
@@ -61,7 +63,8 @@ namespace UDialogs
 
             _instance = this;
 
-            DontDestroyOnLoad(gameObject);
+            if (Persistent)
+                DontDestroyOnLoad(gameObject);
         }
 
         public static void HideDialogWindow(string id)
@@ -77,9 +80,6 @@ namespace UDialogs
                 if (OnHide != null)
                     OnHide.Invoke();
                 manager.OnHideDialog.Invoke();
-            }else
-            {
-                Debug.Log("KEY NOT FOUND" + id);
             }
 
             if (manager.db.Keys.Count == 0)

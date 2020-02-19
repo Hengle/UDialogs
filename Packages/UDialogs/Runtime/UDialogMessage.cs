@@ -140,9 +140,12 @@ namespace UDialogs
 
         protected virtual void UpdateText(Button btn, string text)
         {
-            TextMeshProUGUI ugui = btn.GetComponentInChildren<TextMeshProUGUI>();
-            if (ugui != null)
-                ugui.text = text;
+            TextMeshProUGUI txt = btn.GetComponent<TextMeshProUGUI>();
+
+            if (!txt) txt = btn.GetComponentInChildren<TextMeshProUGUI>(); 
+
+            if (txt != null)
+                txt.text = text;
         }
 
         public void Hide()
@@ -152,7 +155,6 @@ namespace UDialogs
 
         internal void Kill()
         {
-            Debug.Log("KILL");
             Destroy(gameObject,Time.deltaTime);
             StopAllCoroutines();
         }
