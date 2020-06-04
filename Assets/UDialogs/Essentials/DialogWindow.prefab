@@ -222,8 +222,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -251,10 +251,6 @@ MonoBehaviour:
   DefaultOkText: Ok
   DefaultNoText: No
   DefaultCancelText: Cancel
-  InfoIcon: {fileID: 21300000, guid: c0bcae286faf20547b80bdae53261e22, type: 3}
-  LoadingIcon: {fileID: 21300000, guid: a91578fbe69774f44842127984f6e72f, type: 3}
-  WarningIcon: {fileID: 21300000, guid: 43e6ab5a12871a946a1bb8d77b212e29, type: 3}
-  ErrorIcon: {fileID: 21300000, guid: b4d1707aaf776da4bb21f817ea222801, type: 3}
   OkButton: {fileID: 951752044978319023}
   OkButtonClick:
     m_PersistentCalls:

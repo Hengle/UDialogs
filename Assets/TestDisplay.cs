@@ -18,7 +18,8 @@ public class TestDisplay : MonoBehaviour
         };
 
         string id = "TEST";
-        UDialogManager.DisplayDialogWindow(id, "Te Saludo?", DialogType.Warning, DialogButtons.YesNo, new ButtonOptions("Si", (UDialogMessage mm) =>
+        
+        UDialogManager.DisplayDialogWindow(id, "Tienes tiempo?", DialogType.Warning, DialogButtons.YesNo, new ButtonOptions("Si", (UDialogMessage mm) =>
    {
 
        string xid = "TEST2";
